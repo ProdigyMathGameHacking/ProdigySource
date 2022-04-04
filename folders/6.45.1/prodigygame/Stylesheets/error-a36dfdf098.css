@@ -1,0 +1,287 @@
+html {
+    height:100%;
+    overflow:hidden;
+}
+
+body {
+    margin:0;
+    background-color:#55B9A7;
+    height:100%;
+    padding:0 !important;
+    background: rgb(248,208,148);
+    background: linear-gradient(0deg, rgba(248,208,148,1) 0%, rgba(252,181,118,1) 100%);
+}
+
+#game-loading-container {
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:0;
+    background-color:#55B9A7;
+}
+
+.game-loading {
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    margin: unset;
+    max-width: unset;
+}
+
+.game-loading__ed {
+    display: block;
+    height: 150px;
+    margin-bottom: 22px;
+    margin: 0 auto;
+}
+
+#error-div {
+    width: 100%;
+    height: 100%;
+    color: #363636;
+}
+
+.error-panel {
+    width: 500px;
+    height: 358px;
+    margin: auto;
+    background-size: contain;
+    background-image: url(../images/error-backing-5e9d1c1344.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.error-title {
+    font-family: Paytone One;
+    font-size: 36px;
+    line-height: 1.28;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 45px;
+    transform: translateX(-50%);
+}
+
+.error-text {
+    font-family: ABeeZee;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 30px;
+    width: 400px;
+    transform: translateX(-50%);
+}
+
+#try-again-button {
+    background-image: url(../images/wide-white-button-3cf5ba077c.png);
+    top: 25px;
+}
+
+#try-again-button:hover {
+    background-image: url(../images/wide-white-button-hover-9904c9f9b8.png);
+}
+
+#try-again-button:active {
+    background-image: url(../images/wide-white-button-active-bf0e7cb892.png);
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    background-size: contain;
+    width: 120px;
+    height: 60px;
+    position: relative;
+}
+
+.button-wide {
+    display: flex;
+    justify-content: space-evenly;
+    background-size: contain;
+    width: 181px;
+    height: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0px;
+}
+
+.button-text {
+    display: block;
+    font-family: Paytone One;
+    font-size: 18px;
+    line-height: 1.44;
+    text-align: center;
+    color: #363636;
+    position: relative;
+    top: 14px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+#error-icon {
+    position: relative;
+    left: 50%;
+    top: 57px;
+    transform: translateX(-50%);
+}
+
+#error-button-arrow {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 18px;
+}
+
+#warning-div {
+    width: 100%;
+    height: 100%;
+    color: #363636;
+}
+
+#warning-panel {
+    width: 700px;
+    height: 596px;
+    margin: auto;
+    background-size: contain;
+    background-image: url(../images/error-backing-large-6dd9908d91.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+#warning-title {
+    font-family: Paytone One;
+    font-size: 36px;
+    line-height: 1.28;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+}
+
+#warning-text {
+    font-family: ABeeZee;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 130px;
+    width: 500px;
+    transform: translateX(-50%);
+}
+
+#buttons-div {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 270px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.medium-white-button {
+    background-image: url(../images/medium-white-button-default-b869038dbd.png);
+}
+.medium-white-button:hover {
+    background-image: url(../images/medium-white-button-hover-6d4ca87005.png);
+}
+.medium-white-button:active {
+    background-image: url(../images/medium-white-button-active-4030fdce7c.png);
+}
+
+
+.medium-red-button {
+    background-image: url(../images/medium-red-button-default-ba4dbad30f.png);
+}
+.medium-red-button:hover {
+    background-image: url(../images/medium-red-button-hover-93a84a6126.png);
+}
+.medium-red-button:active {
+    background-image: url(../images/medium-red-button-active-c1034d9eb6.png);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .error-panel {
+        width: 300px;
+        height: 215px;
+    }
+    
+    .error-title {
+        font-size: 20px;
+        top: 27px;
+    }
+    
+    .error-text {
+        font-size: 12px;
+        overflow-wrap: normal;
+        width: 240px;
+        top: 26px;
+    }
+
+    #warning-panel {
+        width: 310px;
+        height: 264px;
+    }
+    
+    #warning-title {
+        font-size: 20px;
+        top: 20px;
+    }
+    
+    #warning-text {
+        font-size: 12px;
+        top: 32px;
+        width: 270px;
+        overflow-wrap: normal;
+        line-height: 1.2;
+    }
+
+    #mobile-inline {
+        display:none;
+    }
+
+    .button {
+        width: 76px;
+        height: 38px;
+    }
+    
+    .button-wide {
+        width: 115px;
+        height: 38px;
+        top: 20px;
+    }
+    
+    .button-text {
+        font-size: 12px;
+        top: 9px;
+    }
+
+    #buttons-div {
+        top: 30px;
+        width: 170px;
+    }
+    
+    #error-icon {
+        top: 30px;
+        width: 27px;
+        height: 27px;
+    }
+    
+    #error-button-arrow {
+        width: 12px;
+        height: 12px;
+        top: 12px;
+    }
+}
